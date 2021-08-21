@@ -22,19 +22,28 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Color(0xFF74D8DE),
       ),
       body: Stack(
-        children[ 
+        children: [
+          Container(
+            decoration: new BoxDecoration(
+              image: new DecorationImage(
+                image: new AssetImage("assets/Background-White.jpg"),
+                fit: BoxFit.fill,
+              ),
+            ),
+          ),
           CustomScrollView(
-          child: 
-              SliverFixedExtentList(
-      itemExtent: 50.0,
-      delegate: SliverChildBuilderDelegate(
-        (BuildContext context, int index) {
-          return Container(
-            alignment: Alignment.center,
-            color: Color(0xFF74D8DE),
-            child: Text('List Item $index'),
-        ),
-      ),],),),
+            slivers: <Widget>[
+              const SliverAppBar(
+                pinned: true,
+                expandedHeight: 250.0,
+                flexibleSpace: FlexibleSpaceBar(
+                  title: Text('Demo'),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
