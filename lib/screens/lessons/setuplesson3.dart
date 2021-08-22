@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app/constants.dart';
 import 'package:quiz_app/screens/HomeScreen/HomeScreen.dart';
-import 'package:quiz_app/screens/lessons/setuplesson3.dart';
 
-class SetupLesson2 extends StatelessWidget {
+class SetupLesson3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +39,7 @@ class SetupLesson2 extends StatelessWidget {
 
                   Center(
                     child: Text(
-                      "It will take a few seconds to a few minutes for the computer to turn on. It will be ready when you see an image and the time on the screen.",
+                      "Parts of a laptop include the camera, the screen, the keyboard, and the trackpad.",
                       style: Theme.of(context).textTheme.headline6.copyWith(
                           color: Colors.black, fontWeight: FontWeight.normal),
                     ),
@@ -50,14 +49,22 @@ class SetupLesson2 extends StatelessWidget {
 
                   Align(
                     alignment: Alignment(0, -0.9),
-                    child: Image.asset('assets/windows_lock_screen.png',
-                        scale: 0.4),
+                    child:
+                        Image.asset('assets/parts_of_laptop.png', scale: 0.4),
                   ),
 
                   Spacer(flex: 1),
+                  Center(
+                    child: Text(
+                      "Camera: \tTo show an image of yourself\nScreen: \t\t\tThe visual display\nKeyboard: \tTo input text\nTrackpad: \tTo move the cursor on the screen",
+                      style: Theme.of(context).textTheme.headline6.copyWith(
+                          color: Colors.black, fontWeight: FontWeight.normal),
+                    ),
+                  ),
+                  Spacer(flex: 1),
 
                   InkWell(
-                    onTap: () => Get.to(SetupLesson3()),
+                    onTap: () => Get.to(HomeScreen()),
                     child: Container(
                       width: double.infinity,
                       alignment: Alignment.center,
