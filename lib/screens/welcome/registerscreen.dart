@@ -39,6 +39,7 @@ class RegisterScreen extends StatelessWidget {
                         color: Color(0xFF74D8DE), fontWeight: FontWeight.bold),
                   ),
                   TextField(
+                    style: TextStyle(color: Colors.black),
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: Color(0xFFEFF9FA),
@@ -55,6 +56,7 @@ class RegisterScreen extends StatelessWidget {
                         color: Color(0xFF74D8DE), fontWeight: FontWeight.bold),
                   ),
                   TextField(
+                    style: TextStyle(color: Colors.black),
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: Color(0xFFEFF9FA),
@@ -70,6 +72,7 @@ class RegisterScreen extends StatelessWidget {
                         color: Color(0xFF74D8DE), fontWeight: FontWeight.bold),
                   ),
                   TextField(
+                    style: TextStyle(color: Colors.black),
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: Color(0xFFEFF9FA),
