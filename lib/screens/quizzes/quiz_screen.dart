@@ -4,7 +4,7 @@ import 'package:quiz_app/controllers/question_controller.dart';
 
 import 'components/body.dart';
 
-class QuizScreen extends StatelessWidget {
+class SetupQuiz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     QuestionController _controller = Get.put(QuestionController());

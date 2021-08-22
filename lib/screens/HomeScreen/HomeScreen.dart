@@ -1,23 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:quiz_app/screens/quiz/quiz_screen.dart';
+import 'package:quiz_app/screens/SetupLesson/setuplesson1.dart';
 import 'package:quiz_app/screens/HomeScreen/HomeScreen(2).dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Learn',
-          style: Theme.of(context)
-              .textTheme
-              .headline5
-              .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
-        ),
-        centerTitle: true,
-        backgroundColor: Color(0xFF74D8DE),
-      ),
       body: Stack(
         children: [
           Container(
@@ -31,7 +20,7 @@ class HomeScreen extends StatelessWidget {
           Align(
             alignment: Alignment(0, -0.9),
             child: InkWell(
-              onTap: () => Get.to(QuizScreen()),
+              onTap: () => Get.to(SetupLesson()),
               child: Container(
                 child: Image.asset('assets/Laptop.png'),
                 width: 85,
@@ -66,7 +55,7 @@ class HomeScreen extends StatelessWidget {
           Align(
             alignment: Alignment(-0.6, -0.05),
             child: InkWell(
-              onTap: () => Get.to(QuizScreen()),
+              onTap: () => Get.to(SetupLesson()),
               child: Container(
                 child: Image.asset('assets/Keyboard.png'),
                 width: 85,
@@ -89,7 +78,7 @@ class HomeScreen extends StatelessWidget {
           Align(
             alignment: Alignment(0.55, -0.05),
             child: InkWell(
-              onTap: () => Get.to(QuizScreen()),
+              onTap: () => Get.to(SetupLesson()),
               child: Container(
                 child: Image.asset('assets/Mouse.png'),
                 width: 85,
@@ -108,7 +97,7 @@ class HomeScreen extends StatelessWidget {
           Align(
             alignment: Alignment(-0.05, 0.75),
             child: InkWell(
-              onTap: () => Get.to(QuizScreen()),
+              onTap: () => Get.to(SetupLesson()),
               child: Container(
                 child: Image.asset('assets/Desktop.png'),
                 width: 85,

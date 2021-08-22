@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:quiz_app/screens/quiz/quiz_screen.dart';
-import 'package:quiz_app/screens/HomeScreen/HomeScreen.dart';
-import 'dart:math' as math;
+import 'package:quiz_app/screens/SetupLesson/setuplesson1.dart';
 
 class HomeScreen2 extends StatelessWidget {
   @override
@@ -32,7 +30,7 @@ class HomeScreen2 extends StatelessWidget {
           Align(
             alignment: Alignment(0, -0.9),
             child: InkWell(
-              onTap: () => Get.to(QuizScreen()),
+              onTap: () => Get.to(SetupLesson()),
               child: Container(
                 child: Image.asset('assets/WindowsControls.png'),
                 width: 85,
@@ -67,7 +65,7 @@ class HomeScreen2 extends StatelessWidget {
           Align(
             alignment: Alignment(-0.49, -0.05),
             child: InkWell(
-              onTap: () => Get.to(QuizScreen()),
+              onTap: () => Get.to(SetupLesson()),
               child: Container(
                 child: Image.asset('assets/wifi.png'),
                 width: 100,
@@ -90,7 +88,7 @@ class HomeScreen2 extends StatelessWidget {
           Align(
             alignment: Alignment(0.55, -0.05),
             child: InkWell(
-              onTap: () => Get.to(QuizScreen()),
+              onTap: () => Get.to(SetupLesson()),
               child: Container(
                 child: Image.asset('assets/Audio.png'),
                 width: 85,
