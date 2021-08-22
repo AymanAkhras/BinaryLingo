@@ -2,11 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app/constants.dart';
 import 'package:quiz_app/screens/HomeScreen/HomeScreen.dart';
+import 'package:quiz_app/screens/lessons/setuplesson2.dart';
 
 class SetupLesson extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'Computer Setup -\nLesson',
+          style: Theme.of(context)
+              .textTheme
+              .headline4
+              .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+        toolbarHeight: 120,
+        centerTitle: true,
+        backgroundColor: Color(0xFF74D8DE),
+      ),
       body: Stack(
         children: [
           Container(
@@ -24,15 +37,6 @@ class SetupLesson extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Spacer(flex: 1), //2/6
-                  Center(
-                    child: Text(
-                      "Computer Setup - Lesson",
-                      style: Theme.of(context).textTheme.headline4.copyWith(
-                          color: Color(0xFF74D8DE),
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                  Spacer(flex: 1),
 
                   Center(
                     child: Text(
@@ -41,29 +45,18 @@ class SetupLesson extends StatelessWidget {
                           color: Colors.black, fontWeight: FontWeight.normal),
                     ),
                   ),
-                  
-                  Container(
-                    decoration: new BoxDecoration(
-                      image: new DecorationImage(
-                        image: new AssetImage("assets/laptop.png"),
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                  ),
+
                   Spacer(flex: 1),
 
-                  Center(
-                    child: Text(
-                      "It will take a few seconds to a few minutes for the computer to turn on. It will be ready when you see an image and the time on the screen.",
-                      style: Theme.of(context).textTheme.headline6.copyWith(
-                          color: Colors.black, fontWeight: FontWeight.normal),
-                    ),
+                  Align(
+                    alignment: Alignment(0, -0.9),
+                    child: Image.asset('assets/Laptop.png', scale: 0.4),
                   ),
 
                   Spacer(flex: 1),
 
                   InkWell(
-                    onTap: () => Get.to(HomeScreen()),
+                    onTap: () => Get.to(SetupLesson2()),
                     child: Container(
                       width: double.infinity,
                       alignment: Alignment.center,
