@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app/constants.dart';
-import 'package:quiz_app/screens/HomeScreen/HomeScreen.dart';
-import 'package:quiz_app/screens/SetupLesson/setuplesson2.dart';
+import 'package:quiz_app/screens/KeyboardLesson/keyboardlesson2.dart';
 
-class SetupLesson extends StatelessWidget {
+class KeyboardLesson1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Computer Setup -\nLesson',
+          'Keyboard - Lesson',
           style: Theme.of(context)
               .textTheme
               .headline4
               .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
         ),
-        toolbarHeight: 120,
+        toolbarHeight: 100,
         centerTitle: true,
         backgroundColor: Color(0xFF74D8DE),
       ),
@@ -40,7 +39,7 @@ class SetupLesson extends StatelessWidget {
 
                   Center(
                     child: Text(
-                      "First, we should turn on the computer with the power button. It's usually near the top right corner of the keyboard on a laptop.",
+                      "The keyboard has letters, numbers, symbols, and some other keys. Pressing on a key sends it to the computer.",
                       style: Theme.of(context).textTheme.headline6.copyWith(
                           color: Colors.black, fontWeight: FontWeight.normal),
                     ),
@@ -50,13 +49,13 @@ class SetupLesson extends StatelessWidget {
 
                   Align(
                     alignment: Alignment(0, -0.9),
-                    child: Image.asset('assets/laptop.png', scale: 0.4),
+                    child: Image.asset('assets/keyboard.jpg', scale: 0.4),
                   ),
 
                   Spacer(flex: 1),
 
                   InkWell(
-                    onTap: () => Get.to(SetupLesson2()),
+                    onTap: () => Get.to(KeyboardLesson2()),
                     child: Container(
                       width: double.infinity,
                       alignment: Alignment.center,
