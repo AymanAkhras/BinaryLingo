@@ -9,6 +9,17 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'Lessons',
+          style: Theme.of(context)
+              .textTheme
+              .headline5
+              .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+        centerTitle: true,
+        backgroundColor: Color(0xFFC3EFF2),
+      ),
       body: Stack(
         children: [
           Container(
