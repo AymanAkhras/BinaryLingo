@@ -50,7 +50,7 @@ class SetupLesson3 extends StatelessWidget {
                   Align(
                     alignment: Alignment(0, -0.9),
                     child:
-                        Image.asset('assets/parts_of_laptop.png', scale: 0.4),
+                        Image.asset('assets/parts_of_laptop.jpg', scale: 0.4),
                   ),
 
                   Spacer(flex: 1),
