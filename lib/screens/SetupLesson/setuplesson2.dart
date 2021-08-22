@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app/constants.dart';
 import 'package:quiz_app/screens/HomeScreen/HomeScreen.dart';
-import 'package:quiz_app/screens/lessons/setuplesson2.dart';
+import 'package:quiz_app/screens/SetupLesson/setuplesson3.dart';
 
-class SetupLesson extends StatelessWidget {
+class SetupLesson2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +40,7 @@ class SetupLesson extends StatelessWidget {
 
                   Center(
                     child: Text(
-                      "First, we should turn on the computer with the power button. It's usually near the top right corner of the keyboard on a laptop.",
+                      "It will take a few seconds to a few minutes for the computer to turn on. It will be ready when you see an image and the time on the screen.",
                       style: Theme.of(context).textTheme.headline6.copyWith(
                           color: Colors.black, fontWeight: FontWeight.normal),
                     ),
@@ -50,13 +50,14 @@ class SetupLesson extends StatelessWidget {
 
                   Align(
                     alignment: Alignment(0, -0.9),
-                    child: Image.asset('assets/Laptop.png', scale: 0.4),
+                    child: Image.asset('assets/windows_lock_screen.png',
+                        scale: 0.4),
                   ),
 
                   Spacer(flex: 1),
 
                   InkWell(
-                    onTap: () => Get.to(SetupLesson2()),
+                    onTap: () => Get.to(SetupLesson3()),
                     child: Container(
                       width: double.infinity,
                       alignment: Alignment.center,

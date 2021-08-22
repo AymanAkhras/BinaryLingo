@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app/constants.dart';
-import 'package:quiz_app/screens/quizzes/setupquiz.dart';
+import 'package:quiz_app/screens/HomeScreen/HomeScreen.dart';
+import 'package:quiz_app/screens/SetupLesson/setuplesson2.dart';
 
-class SetupLesson3 extends StatelessWidget {
+class SetupLesson extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +40,7 @@ class SetupLesson3 extends StatelessWidget {
 
                   Center(
                     child: Text(
-                      "Parts of a laptop include the camera, the screen, the keyboard, and the trackpad.",
+                      "First, we should turn on the computer with the power button. It's usually near the top right corner of the keyboard on a laptop.",
                       style: Theme.of(context).textTheme.headline6.copyWith(
                           color: Colors.black, fontWeight: FontWeight.normal),
                     ),
@@ -49,22 +50,13 @@ class SetupLesson3 extends StatelessWidget {
 
                   Align(
                     alignment: Alignment(0, -0.9),
-                    child:
-                        Image.asset('assets/parts_of_laptop.png', scale: 0.4),
+                    child: Image.asset('assets/Laptop.png', scale: 0.4),
                   ),
 
-                  Spacer(flex: 1),
-                  Center(
-                    child: Text(
-                      "Camera: \tTo show an image of yourself\nScreen: \t\t\tThe visual display\nKeyboard: \tTo input text\nTrackpad: \tTo move the cursor on the screen",
-                      style: Theme.of(context).textTheme.headline6.copyWith(
-                          color: Colors.black, fontWeight: FontWeight.normal),
-                    ),
-                  ),
                   Spacer(flex: 1),
 
                   InkWell(
-                    onTap: () => Get.to(SetupQuiz()),
+                    onTap: () => Get.to(SetupLesson2()),
                     child: Container(
                       width: double.infinity,
                       alignment: Alignment.center,

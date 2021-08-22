@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app/constants.dart';
-import 'package:quiz_app/screens/lessons/setuplesson1.dart';
-import 'package:quiz_app/screens/quizzes/SetupQuiz.dart';
+import 'package:quiz_app/screens/SetupLesson/setuplesson1.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
