@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app/constants.dart';
-import 'package:quiz_app/screens/HomeScreen/HomeScreen.dart';
+import 'package:quiz_app/screens/quizzes/setupquiz.dart';
 
 class SetupLesson3 extends StatelessWidget {
   @override
@@ -64,7 +64,7 @@ class SetupLesson3 extends StatelessWidget {
                   Spacer(flex: 1),
 
                   InkWell(
-                    onTap: () => Get.to(HomeScreen()),
+                    onTap: () => Get.to(SetupQuiz()),
                     child: Container(
                       width: double.infinity,
                       alignment: Alignment.center,
