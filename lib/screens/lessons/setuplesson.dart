@@ -26,45 +26,42 @@ class SetupLesson extends StatelessWidget {
                   Spacer(flex: 1), //2/6
                   Center(
                     child: Text(
-                      "Setup Lesson",
+                      "Computer Setup - Lesson",
                       style: Theme.of(context).textTheme.headline4.copyWith(
                           color: Color(0xFF74D8DE),
                           fontWeight: FontWeight.bold),
                     ),
                   ),
-                  Spacer(flex: 4),
-                  Text(
-                    "Username",
-                    style: Theme.of(context).textTheme.headline6.copyWith(
-                        color: Color(0xFF74D8DE), fontWeight: FontWeight.bold),
+                  Spacer(flex: 1),
+
+                  Center(
+                    child: Text(
+                      "First, we should turn on the computer with the power button. It's usually near the top right corner of the keyboard on a laptop.",
+                      style: Theme.of(context).textTheme.headline6.copyWith(
+                          color: Colors.black, fontWeight: FontWeight.normal),
+                    ),
                   ),
-                  TextField(
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Color(0xFFEFF9FA),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(12)),
+                  
+                  Container(
+                    decoration: new BoxDecoration(
+                      image: new DecorationImage(
+                        image: new AssetImage("assets/laptop.png"),
+                        fit: BoxFit.fill,
                       ),
                     ),
                   ),
-                  SizedBox(height: 50),
-                  Text(
-                    "Password",
-                    style: Theme.of(context).textTheme.headline6.copyWith(
-                        color: Color(0xFF74D8DE), fontWeight: FontWeight.bold),
-                  ),
-                  TextField(
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Color(0xFFEFF9FA),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(12)),
-                      ),
+                  Spacer(flex: 1),
+
+                  Center(
+                    child: Text(
+                      "It will take a few seconds to a few minutes for the computer to turn on. It will be ready when you see an image and the time on the screen.",
+                      style: Theme.of(context).textTheme.headline6.copyWith(
+                          color: Colors.black, fontWeight: FontWeight.normal),
                     ),
                   ),
-                  Spacer(
-                    flex: 4,
-                  ),
+
+                  Spacer(flex: 1),
+
                   InkWell(
                     onTap: () => Get.to(HomeScreen()),
                     child: Container(
