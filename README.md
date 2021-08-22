@@ -1,14 +1,7 @@
 # BinaryLingo
 
+Technology is everywhere in our lives. Almost everyone in the modern world uses a computer, and it almost seems natural to adapt and learn how to use new technologies. But what about those who have never or very rarely interacted with a computer? How do they get started? BinaryLingo strives to help those people.
 
-**Packages we are using:**
-
-- websafe_svg: [link](https://pub.dev/packages/websafe_svg)
-- GetX: [link](https://pub.dev/packages/get)
-
-Our  app contains a login and register section and a homepage with 
-
-This is a complete functional quiz app that works on both Android and iOS devices. For state management, we use the getX package.
-
+BinaryLingo is an application to help absolute beginners learn how to use a computer. It offers short lessons starting from the very basics of what a computer is, and slowly moves on through more complex topics. At the end of each lesson, there is a short multiple-choice quiz to test the user's knowledge. We value simplicity to ensure that everyone that opens the app can follow along without trouble, to promote inclusion and accessibility in technology and reduce barriers to learning technology.
 
 
