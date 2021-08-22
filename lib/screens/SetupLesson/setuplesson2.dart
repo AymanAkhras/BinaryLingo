@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app/constants.dart';
-import 'package:quiz_app/screens/HomeScreen/HomeScreen.dart';
 import 'package:quiz_app/screens/SetupLesson/setuplesson3.dart';
 
 class SetupLesson2 extends StatelessWidget {
