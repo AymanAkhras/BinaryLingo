@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app/screens/SetupLesson/setuplesson1.dart';
 import 'package:quiz_app/screens/KeyboardLesson/keyboardlesson1.dart';
+import 'package:quiz_app/screens/MouseLesson/mouselesson1.dart';
 import 'package:quiz_app/screens/HomeScreen/HomeScreen(2).dart';
 
 class HomeScreen extends StatelessWidget {
@@ -79,7 +80,7 @@ class HomeScreen extends StatelessWidget {
           Align(
             alignment: Alignment(0.55, -0.05),
             child: InkWell(
-              onTap: () => Get.to(SetupLesson()),
+              onTap: () => Get.to(MouseLesson1()),
               child: Container(
                 child: Image.asset('assets/Mouse.png'),
                 width: 85,
