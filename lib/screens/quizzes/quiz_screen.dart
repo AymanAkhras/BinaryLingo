@@ -12,10 +12,15 @@ class SetupQuiz extends StatelessWidget {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         // Fluttter show the back button automatically
-        backgroundColor: Colors.transparent,
+        backgroundColor: Color(0xFF1CAEBC),
         elevation: 0,
         actions: [
-          TextButton(onPressed: _controller.nextQuestion, child: Text("Skip")),
+          TextButton(
+              onPressed: _controller.nextQuestion,
+              child: Text(
+                "Skip",
+                style: TextStyle(color: Colors.white),
+              )),
         ],
       ),
       body: Body(),

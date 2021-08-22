@@ -29,7 +29,8 @@ class Option extends StatelessWidget {
                 return kRedColor;
               }
             }
-            return kGrayColor;
+            // Text within color
+            return Colors.white;
           }
 
           IconData getTheRightIcon() {
@@ -52,6 +53,7 @@ class Option extends StatelessWidget {
                     "${index + 1}. $text",
                     style: TextStyle(color: getTheRightColor(), fontSize: 16),
                   ),
+                  // Color of circles of checkmarks and X's
                   Container(
                     height: 26,
                     width: 26,

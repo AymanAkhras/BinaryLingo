@@ -17,7 +17,14 @@ class Body extends StatelessWidget {
     QuestionController _questionController = Get.put(QuestionController());
     return Stack(
       children: [
-        SvgPicture.asset("assets/icons/bg.svg", fit: BoxFit.fill),
+        Container(
+          decoration: new BoxDecoration(
+            image: new DecorationImage(
+              image: new AssetImage("assets/Background-Theme.jpg"),
+              fit: BoxFit.fill,
+            ),
+          ),
+        ),
         SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,6 +41,7 @@ class Body extends StatelessWidget {
                 child: Obx(
                   () => Text.rich(
                     TextSpan(
+                      // Color of the Number of questions
                       text:
                           "Question ${_questionController.questionNumber.value}",
                       style: Theme.of(context)
@@ -45,7 +53,7 @@ class Body extends StatelessWidget {
                           text: "/${_questionController.questions.length}",
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headline4
                               .copyWith(color: kSecondaryColor),
                         ),
                       ],

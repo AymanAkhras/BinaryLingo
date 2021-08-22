@@ -9,7 +9,7 @@ class SetupScreen extends StatelessWidget {
           Container(
             decoration: new BoxDecoration(
               image: new DecorationImage(
-                image: new AssetImage("assets/Background-Theme.jpg"),
+                image: new AssetImage("assets/Background-White.jpg"),
                 fit: BoxFit.fill,
               ),
             ),
